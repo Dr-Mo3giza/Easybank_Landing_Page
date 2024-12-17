@@ -1,0 +1,36 @@
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+.overlay {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(45, 49, 77, 1) 45%,
+    rgba(99, 102, 123, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.invite-btn {
+  background: rgb(49, 211, 92);
+  background: linear-gradient(135deg, rgba(49, 211, 92, 1) 40%, rgba(43, 183, 218, 1) 90%);
+}
+
+.desktop-menu > ul li::after {
+  height: 4px;
+  width: 55px;
+  position: absolute;
+  top: 63px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(49, 211, 92);
+  background: linear-gradient(135deg, rgba(49, 211, 92, 1) 40%, rgba(43, 183, 218, 1) 90%);
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    height: calc(100vh - 22px);
+  }
+}
